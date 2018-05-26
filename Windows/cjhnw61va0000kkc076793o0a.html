@@ -10,28 +10,11 @@
 
     <!--Description-->
     
-        <meta name="description" content="在未越狱状态下进行真机调试Tools：
-xcode
-
-真机调试证书
-
-iPhone
-
-MachOView工具
-
-class-dump
-
-logify
-
-Theos
-
-
-
-刺激战场.ipa(注入dylib辅助的包)
-
-解压 刺激战场.ipa得到ZHSign.app
-
-打开xcode新建一个工程，名字为">
+        <meta name="description" content="Y-OS Win7 SP1 x86&amp;amp;x64 纯净旗舰版v201804
+=====================
+Y-OS一贯作风：精心制作，每一个Y-OS都是精品。
+=====================
+*无删减的完整版，IE11（可卸载回IE8），精准优化系统，运行速度快。ESD版">
     
 
     <!--Author-->
@@ -41,7 +24,7 @@ Theos
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="iOS刺激战场辅助分析"/>
+        <meta property="og:title" content="Y-OS Win7 SP1 x86&amp;x64 纯净旗舰版v201804（GHO+ESD+双驱动）"/>
     
 
     <!--Open Graph Description-->
@@ -63,7 +46,7 @@ Theos
 
     <!-- Title -->
     
-    <title>iOS刺激战场辅助分析 - Lisystem</title>
+    <title>Y-OS Win7 SP1 x86&amp;x64 纯净旗舰版v201804（GHO+ESD+双驱动） - Lisystem</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -120,7 +103,7 @@ Theos
                     <li>
                         <a href="/">
                             
-                                Home
+                                主页
                             
                         </a>
                     </li>
@@ -128,7 +111,7 @@ Theos
                     <li>
                         <a href="/archives">
                             
-                                Archives
+                                归档
                             
                         </a>
                     </li>
@@ -136,7 +119,7 @@ Theos
                     <li>
                         <a href="/tags">
                             
-                                Tags
+                                标签
                             
                         </a>
                     </li>
@@ -144,7 +127,7 @@ Theos
                     <li>
                         <a href="/categories">
                             
-                                Categories
+                                分类
                             
                         </a>
                     </li>
@@ -152,7 +135,7 @@ Theos
                     <li>
                         <a href="/about">
                             
-                                about
+                                关于
                             
                         </a>
                     </li>
@@ -181,13 +164,13 @@ Theos
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>iOS刺激战场辅助分析</h1>
+                    <h1>Y-OS Win7 SP1 x86&x64 纯净旗舰版v201804（GHO+ESD+双驱动）</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
                         
-                            2018-05-25
+                            2018-05-27
                         
                     </span>
                 </div>
@@ -207,18 +190,11 @@ Theos
                     
                         
 
-
-<a href="/tags/iOS/">#iOS</a>
-
+<a href="/categories/Windows/">Windows</a>
 
                     
                 </div>
                 <div class="col-lg-4 col-md-5 post-categories">
-                    
-                        
-
-<a href="/categories/iOS/">iOS</a>
-
                     
                 </div>
             
@@ -228,51 +204,34 @@ Theos
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h6 id="在未越狱状态下进行真机调试"><a href="#在未越狱状态下进行真机调试" class="headerlink" title="在未越狱状态下进行真机调试"></a>在未越狱状态下进行真机调试</h6><h5 id="Tools："><a href="#Tools：" class="headerlink" title="Tools："></a>Tools：</h5><ul>
-<li><p>xcode</p>
-</li>
-<li><p>真机调试证书</p>
-</li>
-<li><p>iPhone</p>
-</li>
-<li><p>MachOView工具</p>
-</li>
-<li><p>class-dump</p>
-</li>
-<li><p>logify</p>
-</li>
-<li><p>Theos</p>
-</li>
-</ul>
-<hr>
-<p>刺激战场.ipa(注入dylib辅助的包)</p>
-<ol>
-<li><p>解压 刺激战场.ipa<br><a href="http://7xwf5u.com1.z0.glb.clouddn.com/ci1.png" title="解压" target="_blank" rel="noopener"><img src="http://7xwf5u.com1.z0.glb.clouddn.com/ci1.png" alt="解压" title="解压"></a><br>得到ZHSign.app</p>
-</li>
-<li><p>打开<strong>xcode</strong>新建一个工程，名字为ZHSign</p>
-</li>
-</ol>
-<p><a href="http://7xwf5u.com1.z0.glb.clouddn.com/ci2.png" title="新建工程" target="_blank" rel="noopener"><img src="http://7xwf5u.com1.z0.glb.clouddn.com/ci2.png" alt="新建工程" title="新建工程"></a></p>
-<p>配置好证书Run一下 （command+R）</p>
-<p><a href="http://7xwf5u.com1.z0.glb.clouddn.com/ci3.png" target="_blank" rel="noopener"><img src="http://7xwf5u.com1.z0.glb.clouddn.com/ci3.png" alt=""></a></p>
-<p>接下来利用一下偷天换日的方法把刺激战场的包copy到我们新建的工程里（在Build Phases添加一个Run Script，脚本cp -rf /刺激战场Patch.app /新建工程的Patch）如<em>cp -rf /Users/lisystem/Desktop/Payload/ZHSign.app /Users/lisystem/Library/Developer/Xcode/DerivedData/ZHSign-gtvuxaewlrtuuadukjyfbooggrvf/Build/Products/Debug-iphoneos/</em>，这样一来就能用xcode进行真机调试了。</p>
-<p><a href="http://7xwf5u.com1.z0.glb.clouddn.com/ci4.png" target="_blank" rel="noopener"><img src="http://7xwf5u.com1.z0.glb.clouddn.com/ci4.png" alt=""></a></p>
-<p>连接手机到xcode工程command+R  Run运行一下，这时我们就可以进行lldb调试了~~~<br><a href="http://7xwf5u.com1.z0.glb.clouddn.com/CI5.png" target="_blank" rel="noopener"><img src="http://7xwf5u.com1.z0.glb.clouddn.com/CI5.png" alt=""></a></p>
-<p>手机端</p>
-<p><a href="http://7xwf5u.com1.z0.glb.clouddn.com/WechatIMG2.png" target="_blank" rel="noopener"><img src="http://7xwf5u.com1.z0.glb.clouddn.com/WechatIMG2.png" alt=""></a></p>
-<p>这时需要输入激活码才能进入，先抓包看一下~~ 随便输入几个数字<br><a href="http://7xwf5u.com1.z0.glb.clouddn.com/WechatIMG3.png" target="_blank" rel="noopener"><img src="http://7xwf5u.com1.z0.glb.clouddn.com/WechatIMG3.png" alt=""></a><br>这里我输入888888，提示激活码无效~~<br><a href="http://7xwf5u.com1.z0.glb.clouddn.com/cizb.png" target="_blank" rel="noopener"><img src="http://7xwf5u.com1.z0.glb.clouddn.com/cizb.png" alt=""></a><br>抓包得到的信息  POST /api/pubg/activeCode<br><em><a href="http://45.61.244.165:17788/api/pubg/activeCode" target="_blank" rel="noopener">http://45.61.244.165:17788/api/pubg/activeCode</a></em><br>POST提交的参数 <code>info=lHVenL8UJXDQJkyx0xnhmg4r8kRm1Qgp//gyk4RFC3/kxrdHkZAnH9IYWGXYckDy+bNLom7vJzmJcSnOUudMOsl0m/A12sNaOMOwR6WNtnA=</code><br>返回的JSON参数<br><code>{
-&quot;info&quot;: &quot;Mw3eGChavBkohHenbbNvNNuW2yw2OgWeweHTTiiK4O09zWVbnW9LruDBjcuDZFuSE22jlbKy6gUAoL9VVP2PG+HJst9uzd74m+CxypAxwZA=&quot;,
-&quot;status&quot;: &quot;200&quot;
-}</code><br>这里的数据都进行了加密，要想破解进去那就要知道这里提交了什么~需要做的就是“解密”，要解密就要先知道是什么加密方式！</p>
-<p>接下来到.app包里看下注入的库~~ 祭出神器 <strong>class-dump</strong></p>
-<p><a href="http://7xwf5u.com1.z0.glb.clouddn.com/ci6.png" target="_blank" rel="noopener"><img src="http://7xwf5u.com1.z0.glb.clouddn.com/ci6.png" alt=""></a><br><code>cd desktop/Payload/ZHSign.app</code><br><code>class-dump -H mmmcj.dylib -o ./dump</code><br>这时dump出来的头文件就在这个dump文件夹里了~进文件夹简单看一下~额 看看有没有什么线索~<br><a href="http://7xwf5u.com1.z0.glb.clouddn.com/aes.png" target="_blank" rel="noopener"><img src="http://7xwf5u.com1.z0.glb.clouddn.com/aes.png" alt=""></a></p>
-<p>NSString-AESSecurity.h,这就是我们需要的线索~无疑是AES加密了</p>
-<h5 id="祭出神器logify"><a href="#祭出神器logify" class="headerlink" title="祭出神器logify"></a>祭出神器logify</h5><p>dump文件夹路径终端键入<code>/opt/theos/bin/logify.pl NSString-AESSecurity.h &gt; Tweak.xm</code>logify.pl 生成Tweak.xm，然后用Theos生成dylib（我这里生成了hookaes.dylib）</p>
-<h5 id="yololib"><a href="#yololib" class="headerlink" title="yololib"></a>yololib</h5><p>利用yololib注入hookaes.dylib进刺激战场的Tweak可执行文件里~hookaes.dylib拷贝到ZHSign.app里面</p>
-<p>#####回到xcode工程command+R<br>重新执行Run一下~安装注入好的包进行lldb<br>回到手机端再输入激活码888888<br><a href="http://7xwf5u.com1.z0.glb.clouddn.com/run.png" target="_blank" rel="noopener"><img src="http://7xwf5u.com1.z0.glb.clouddn.com/run.png" alt=""></a></p>
-<p>从lldb里可以看到我们注入的hookaes.dylib已经生效，并打印出来信息~<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ShadowTrackerExtra[2744:1486054] [1;36m[hookaes] [m[0;36m/Users/lisystem/Desktop/hookaes/hookaes/hookaes.xm:3[m [0;30;46mDEBUG:[m +[&lt;NSString: 0x1b56f07b8&gt; encrypyAES:&#123;&quot;activate&quot;:&quot;888888&quot;, &quot;UUID&quot;:&quot;D47A7380-9E8B-4E93-B929-C26AC674A470&quot;, &quot;type&quot;: 1&#125; key:=[%4+&amp;iw?(]/6,E9]</span><br></pre></td></tr></table></figure></p>
-<p>提交的信息为<code>{&quot;activate&quot;:&quot;888888&quot;, &quot;UUID&quot;:&quot;D47A7380-9E8B-4E93-B929-C26AC674A470&quot;, &quot;type&quot;: 1}</code></p>
-<h2 id="AES密匙-key-4-amp-iw-6-E9"><a href="#AES密匙-key-4-amp-iw-6-E9" class="headerlink" title="AES密匙 key:=[%4+&amp;iw?(]/6,E9]"></a>AES密匙 <code>key:=[%4+&amp;iw?(]/6,E9]</code></h2><p>解密好了下面就不说了，改激活码后台域名为自己的。。然后自己YY了。</p>
+                <p><a href="http://y-os.net/wp-content/uploads/2018/04/Windows-10-x64-2018-04-19-01-46-22.jpg" target="_blank" rel="noopener"><img src="http://y-os.net/wp-content/uploads/2018/04/Windows-10-x64-2018-04-19-01-46-22.jpg" alt=""></a><br>Y-OS Win7 SP1 x86&amp;x64 纯净旗舰版v201804</p>
+<p>=====================</p>
+<p>Y-OS一贯作风：精心制作，每一个Y-OS都是精品。</p>
+<p>=====================</p>
+<p>*无删减的完整版，IE11（可卸载回IE8），精准优化系统，运行速度快。ESD版集成最新万能驱动7（2018年4月更新版），GHO版集成最新总裁驱动（2018年4月更新版），支持UEFI+GPT启动（32位不支持），集成NVME补丁以及USB3.0驱动。由于驱动比较大，ESD和GHO体积也增大，但安装后，驱动自动删除，所以系统容量并不大！</p>
+<p>=====================</p>
+<p>重要简述：</p>
+<p>*系统版本：32位&amp;64位旗舰版</p>
+<p>*系统补丁：2018年4月20日</p>
+<p>*驱动：万能驱动/总裁驱动</p>
+<p>*系统状态：安全、稳定、快速</p>
+<p>*主页：Y-OS 承诺不锁</p>
+<p>*纯净度：非常纯净，无多余软件</p>
+<p>*制作方式：离线制作</p>
+<p>*IE：最新IE11(可卸载回IE8)</p>
+<p>*输入法：微软自带拼音</p>
+<p>*运行库：VC、DX9、.NET3.5</p>
+<p>*完整度：无删减的完整版</p>
+<p>=====================<br><em>64位ESD下载地址：
+</em>大小：4.05GB<br>*MD5: B0F11F6FB0EEB0A592334B743F3BF041<br>百度云盘：<a href="https://pan.baidu.com/s/1vdns2YKzna0SgCYCIWLEqQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1vdns2YKzna0SgCYCIWLEqQ</a> 密码: rcfy</p>
+<p><em>64位GHO下载地址：
+</em>大小：6.03GB<br>*MD5: DB6D7E3D5445BD056FF7C431E745F8A5</p>
+<h1 id="百度云盘：https-pan-baidu-com-s-11pdTqsoZ6hwGFx-jq0xC-w-密码-r99s"><a href="#百度云盘：https-pan-baidu-com-s-11pdTqsoZ6hwGFx-jq0xC-w-密码-r99s" class="headerlink" title="百度云盘：https://pan.baidu.com/s/11pdTqsoZ6hwGFx_jq0xC_w 密码: r99s"></a>百度云盘：<a href="https://pan.baidu.com/s/11pdTqsoZ6hwGFx_jq0xC_w" target="_blank" rel="noopener">https://pan.baidu.com/s/11pdTqsoZ6hwGFx_jq0xC_w</a> 密码: r99s</h1><p><em>32位ESD下载地址：
+</em>大小：3.13GB<br>*MD5: E49B3E6EBDBB29980EA55EBB5D38AADA<br>百度云盘：<a href="https://pan.baidu.com/s/1AsQmX_8w8Nus0OCacgGFbg" target="_blank" rel="noopener">https://pan.baidu.com/s/1AsQmX_8w8Nus0OCacgGFbg</a> 密码: utbq</p>
+<p><em>32位GHO下载地址：
+</em>大小：4.21GB<br>*MD5: A537042960911A4CA89ED539F6372A23<br>百度云盘：<a href="https://pan.baidu.com/s/1cPvpi36xaSdam6n2rlx_Ug" target="_blank" rel="noopener">https://pan.baidu.com/s/1cPvpi36xaSdam6n2rlx_Ug</a> 密码: 6u4m</p>
+<p>======================</p>
+<p>Y-OS工作室出品 2018.4.21</p>
 
 
                 
