@@ -131,305 +131,159 @@
         <div class="container">
             <div class="row">
                 <main class="col-md-8 main-content ">
-                    <div class="carousel">
-    <img src="/img/head-img.jpg">
+                    <div class="about">
+	
+	    <article class="post">
+	        <h1 class="post-head">关于我</h1>
+	        <div class="post-body">
+	            <!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>一键解析爱奇艺,优酷,腾讯,乐视,芒果等各大视频网站的VIP视频。</title>	
+	<!--必要样式-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!--[if IE]>
+		<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+</head>
+<body>
+	<div class="login">
+		<div align="center">
+			<img src="img/miss.png">
+		</div>
+	  <div class="login_title">
+	    <!--span>爱奇艺视频地址</span-->
+	  </div>
+	  <div class="login_fields">
+	    <div class="login_fields__user">
+	      <div class="icon">
+	        <img src="img/user_icon_copy.png">
+	      </div>
+	      <input placeholder="复制VIP视频的地址到此栏点击播放就行了" id="valueurl" name="valueurl" value="" type="text">
+	        <div class="validation">
+	          <img src="img/tick.png">
+	        </div>
+	      
+	    </div>
+	    <div class="login_fields__submit">
+	     <input type="button" name="submitbf" value="播放">
+		 <br>
+		 <input type="button" value="返回" onclick="javascrtpt:window.location.href='http://www.52pojie.cn/'">
+	    </div>
+	 </div>
+		<!--认证完毕-->
+	  <div class="success">
+		<iframe style="width: 630px; height: 475px;" name="iframe0" id="vipurl" src="" frameborder="0" data-id="" seamless></iframe>
+	  </div>
+	  <!--//认证完毕-->
+	  <div class="disclaimer">
+	  </div>
+	</div>
+	<!--播放认证-->
+	<div class="authent">
+	  <img src="img/puff.svg">
+	  <p>全力加载中....</p>
+	</div>
+	<strong><div class="text" style=" text-align:center;">本站所有接口均来至互联网仅提供本地测试使用，请勿用于任何商业用途，否则后果自负。！</div></strong>
+	<!--播放认证//-->
+	<script type="text/javascript" src="js/stopExecutionOnTimeout.js?t=1"></script>
+	<script type="text/javascript" src="js/iqyapi.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script>
+	$('input[type="button"]')["click"](function() {
+	$(".login")["css"]('padding', '100px 700px 150px 40px');
+	$(".success")["css"]('margin-left', '-170px');
+	setTimeout(function() {
+		$('.authent')["show"]()["animate"]({
+			right: -320
+		}, {
+			easing: 'easeOutQuint',
+			duration: 600,
+			queue: false
+		});
+		$('.authent')["animate"]({
+			opacity: 1
+		}, {
+			duration: 200,
+			queue: false
+		})["addClass"]('visible');
+	}, 500);
+	setTimeout(function() {
+		$('.authent')["show"]()["animate"]({
+			right: 90
+		}, {
+			easing: 'easeOutQuint',
+			duration: 600,
+			queue: false
+		});
+		$('.authent')["animate"]({
+			opacity: 0
+		}, {
+			duration: 200,
+			queue: false
+		})["addClass"]('visible');
+		$('.login')["removeClass"]('testtwo');
+	}, 2500);
+	setTimeout(function() {
+		$('.success')["fadeIn"]();
+	}, 3200);
+	var bfqAtkgI1 = window["document"]["getElementById"]("valueurl")["value"];
+	window["document"]["getElementById"]("vipurl")["src"] = "http://www.wmxz.wang/video.php?url=" + bfqAtkgI1;
+});
+if (window["document"]["getElementById"]('auth') != undefined) {
+        if (window["document"]["getElementById"]('auth')["innerHTML"] != '弹幕') {
+            window["alert"]('温馨提示：\n已经更新了各大视频网站的VIP算法，现在解析正常。大多数VIP视频都能正常播放。如有不能播放的请多刷新几次,有可能是服务器缓存没有刷过来！！');
+        }
+    } else {
+        window["alert"]('温馨提示：\n 已经更新了各大视频网站的VIP算法，现在解析正常。各大VIP视频都能正常播放。如有不能播放的请多刷新几次,有可能是服务器缓存没有刷过来！！');
+    }
+$('input[type="text"],input[type="password"]')["focus"](function() {
+	$(this)["prev"]()["animate"]({
+		'opacity': '1'
+	}, 300);
+});
+$('input[type="text"],input[type="password"]')["blur"](function() {
+	$(this)["prev"]()["animate"]({
+		'opacity': '.5'
+	}, 300);
+});
+$('input[type="text"],input[type="password"]')["keyup"](function() {
+	if (!$(this)["val"]() == '') {
+		$(this)["next"]()["animate"]({
+			'opacity': '1',
+			'right': '30'
+		}, 300);
+	} else {
+		$(this)["next"]()["animate"]({
+			'opacity': '0',
+			'right': '20'
+		}, 300);
+	}
+});
+var PYDt2 = 0;
+$('.tab')["click"](function() {dy
+	$(this)["fadeOut"](300, function() {
+		$(this)["parent"]()["animate"]({
+			'left': '0'
+		});
+	});
+});
+	</script>
+
+<link type="image/x-icon" href="/favicon.ico" rel="icon">
+<link type="image/x-icon" href="/favicon.ico" rel="icon">
+</body>
+</html>
+	        </div>
+	    </article>
+	
 </div>
-
-
-
-
-<article class="post">
-    
-        <div class="post-media">
-            <a href="/Android/KSWEB3.62破解版.html">
-                <img class="img-ajax" src="/img/loading.gif"  data-src="https://attach.52pojie.cn/forum/201608/10/221252hpa8aaz55azyiu3u.png"   alt="KSWEB3.62破解版">
-            </a>
-        </div>
-    
-    <div class="post-content">
-        <div class="post-head home-post-head">
-            <h1 class="post-title">
-                <a href="/Android/KSWEB3.62破解版.html">KSWEB3.62破解版</a>
-            </h1>
-            <div class="post-meta">  &bull;
-                <time class="post-date" datetime="" title="">
-                    2018年05月27日
-                </time>
-            </div>
-        </div>
-        <p class="brief">
-            
-                KSWEB：基于Android的开源服务器
-KSWEB是由战斗民族俄罗斯人开发的一款基于Android的开源服务器，使用lighttpd/nginx+php+sql可以使你的安卓手机瞬间变成一台服务器，并且兼容多数主流PHP程序。为什...
-            
-        </p>
-    </div>
-    
-        <footer class="post-footer clearfix">
-            <div class="pull-left tag-list">
-                <div class="post-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-        <i class="fa fa-folder-open-o"></i>
-        <a href="/categories/Android">
-            Android
-        </a>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-                
-                    <a href="/tags/Android" title='Android'>
-                        Android
-                    </a>
-                
-            
-        </span>
-    </span>
-    
-
-    
-</div>
-
-            </div>
-
-            <div class="post-permalink">
-                <a href="/Android/KSWEB3.62破解版.html" class="btn btn-default">阅读全文</a>
-            </div>
-        </footer>
-    
-</article>
-
-
-<article class="post">
-    
-        <div class="post-media">
-            <a href="/Windows/Y-OS_Win10RS4_X86&X64微量精简专业版201804.html">
-                <img class="img-ajax" src="/img/loading.gif"  data-src="http://y-os.net/wp-content/uploads/2018/04/Windows-10-x64-2018-04-29-12-37-37.jpg"   alt="Y-OS_Win10RS4_X86&X64微量精简专业版201804">
-            </a>
-        </div>
-    
-    <div class="post-content">
-        <div class="post-head home-post-head">
-            <h1 class="post-title">
-                <a href="/Windows/Y-OS_Win10RS4_X86&X64微量精简专业版201804.html">Y-OS_Win10RS4_X86&X64微量精简专业版201804</a>
-            </h1>
-            <div class="post-meta">  &bull;
-                <time class="post-date" datetime="" title="">
-                    2018年05月27日
-                </time>
-            </div>
-        </div>
-        <p class="brief">
-            
-                Y-OS_Win10RS4_X86&amp;amp;X64微量精简专业版201804
-=====================
-Y-OS一贯作风：精心制作，每一个Y-OS都是精品。
-=====================
-本系统为二合一...
-            
-        </p>
-    </div>
-    
-        <footer class="post-footer clearfix">
-            <div class="pull-left tag-list">
-                <div class="post-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-        <i class="fa fa-folder-open-o"></i>
-        <a href="/categories/Windows">
-            Windows
-        </a>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-                
-                    <a href="/tags/Windows" title='Windows'>
-                        Windows
-                    </a>
-                
-            
-        </span>
-    </span>
-    
-
-    
-</div>
-
-            </div>
-
-            <div class="post-permalink">
-                <a href="/Windows/Y-OS_Win10RS4_X86&X64微量精简专业版201804.html" class="btn btn-default">阅读全文</a>
-            </div>
-        </footer>
-    
-</article>
-
-
-<article class="post">
-    
-        <div class="post-media">
-            <a href="/Windows/Y-OS Win7 SP1 x86&x64 纯净旗舰版v201804（GHO+ESD+双驱动）.html">
-                <img class="img-ajax" src="/img/loading.gif"  data-src="http://y-os.net/wp-content/uploads/2018/04/Windows-10-x64-2018-04-19-01-46-22.jpg"   alt="Y-OS Win7 SP1 x86&x64 纯净旗舰版v201804（GHO+ESD+双驱动）">
-            </a>
-        </div>
-    
-    <div class="post-content">
-        <div class="post-head home-post-head">
-            <h1 class="post-title">
-                <a href="/Windows/Y-OS Win7 SP1 x86&x64 纯净旗舰版v201804（GHO+ESD+双驱动）.html">Y-OS Win7 SP1 x86&x64 纯净旗舰版v201804（GHO+ESD+双驱动）</a>
-            </h1>
-            <div class="post-meta">  &bull;
-                <time class="post-date" datetime="" title="">
-                    2018年05月27日
-                </time>
-            </div>
-        </div>
-        <p class="brief">
-            
-                Y-OS Win7 SP1 x86&amp;amp;x64 纯净旗舰版v201804
-=====================
-Y-OS一贯作风：精心制作，每一个Y-OS都是精品。
-=====================
-*无删减的完整...
-            
-        </p>
-    </div>
-    
-        <footer class="post-footer clearfix">
-            <div class="pull-left tag-list">
-                <div class="post-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-        <i class="fa fa-folder-open-o"></i>
-        <a href="/categories/Windows">
-            Windows
-        </a>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-                
-            
-        </span>
-    </span>
-    
-
-    
-</div>
-
-            </div>
-
-            <div class="post-permalink">
-                <a href="/Windows/Y-OS Win7 SP1 x86&x64 纯净旗舰版v201804（GHO+ESD+双驱动）.html" class="btn btn-default">阅读全文</a>
-            </div>
-        </footer>
-    
-</article>
-
-
-<article class="post">
-    
-        <div class="post-media">
-            <a href="/iOS/iOS刺激战场辅助分析.html">
-                <img class="img-ajax" src="/img/loading.gif"  data-src="http://7xwf5u.com1.z0.glb.clouddn.com/WechatIMG3.png"   alt="iOS刺激战场辅助分析">
-            </a>
-        </div>
-    
-    <div class="post-content">
-        <div class="post-head home-post-head">
-            <h1 class="post-title">
-                <a href="/iOS/iOS刺激战场辅助分析.html">iOS刺激战场辅助分析</a>
-            </h1>
-            <div class="post-meta">  &bull;
-                <time class="post-date" datetime="" title="">
-                    2018年05月25日
-                </time>
-            </div>
-        </div>
-        <p class="brief">
-            
-                在未越狱状态下进行真机调试Tools：
-xcode
-
-真机调试证书
-
-iPhone
-
-MachOView工具
-
-class-dump
-
-logify
-
-Theos
-
-
-
-刺激战场.ipa(注入dylib辅助的包)
-
-解压 刺激战场.i...
-            
-        </p>
-    </div>
-    
-        <footer class="post-footer clearfix">
-            <div class="pull-left tag-list">
-                <div class="post-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-        <i class="fa fa-folder-open-o"></i>
-        <a href="/categories/iOS">
-            iOS
-        </a>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-                
-                    <a href="/tags/iOS" title='iOS'>
-                        iOS
-                    </a>
-                
-            
-        </span>
-    </span>
-    
-
-    
-</div>
-
-            </div>
-
-            <div class="post-permalink">
-                <a href="/iOS/iOS刺激战场辅助分析.html" class="btn btn-default">阅读全文</a>
-            </div>
-        </footer>
-    
-</article>
-
-
-
-
-
-
                 </main>
                 
     <aside class="col-md-4 sidebar">
